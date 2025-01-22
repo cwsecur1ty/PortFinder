@@ -1,8 +1,8 @@
-# PortFinder
+# Python-Port-Scanner
 
 ## Description
 
-**PortFinder** is a Python-based tool for scanning ports on one or more target IP addresses or URLs. It supports scanning a range of ports, resolving hostnames to IP addresses, and saving scan results to a file. PortFinder utilises asynchronous programming to perform efficient and fast scans.
+**Python-Port-Scanner** is a Python-based tool for scanning ports on one or more target IP addresses or URLs. It supports scanning a range of ports, resolving hostnames to IP addresses, and saving scan results to a file. Python-Port-Scanner utilises asynchronous programming to perform efficient and fast scans.
 
 ## Features
 
@@ -33,9 +33,9 @@
    pip install aiofiles
    ```
 ## Usage
-PortFinder can be ran with the following parameters:
+Python-Port-Scanner can be ran with the following parameters:
 ```bash
-python PortFinder.py -H <host1>,<host2> -s <start-port> -e <end-port> [-o <output-file>] [--timeout <timeout>]
+python Python-Port-Scanner.py -H <host1>,<host2> -s <start-port> -e <end-port> [-o <output-file>] [--timeout <timeout>]
 ```
 ### Arguments
 Arguments
@@ -47,9 +47,9 @@ Arguments
 ## Example
 To scan ports 1 to 1500 on test.com and save the results to finder.txt:
 ```bash
-python PortFinder.py -H test.com -s 1 -e 1000 -o finder.txt
+python Python-Port-Scanner.py -H test.com -s 1 -e 1000 -o finder.txt
 ```
 To scan mutliple hosts (test.com,test2.com) and save the results to multi-finder.txt.
 ```bash
-python PortFinder.py -H example.com,another-example.com -s 1 -e 1000
+python Python-Port-Scanner.py -H example.com,another-example.com -s 1 -e 1000
 ```
